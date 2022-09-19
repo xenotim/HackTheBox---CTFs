@@ -5,7 +5,7 @@ Programmiersprache: Python
 Jinja2 is used by Python Web Frameworks such as Django or Flask.
 Nutzt Template-Engine --> SSTI?
 ![](images.late.htb.png)
-Test polyglot ssti from cobalt: https://www.cobalt.io/blog/a-pentesters-guide-to-server-side-template-injection-ssti
+## Test polyglot ssti from cobalt: https://www.cobalt.io/blog/a-pentesters-guide-to-server-side-template-injection-ssti
 If it throws an error ssti is succussfull
 How to: grab screen area with payload and save it (ssti-cobalt.png).
 ![](ssti-cobalt-polyglot.png)
@@ -25,7 +25,7 @@ Result: 49 --> injectable
 SSTI remote commands from: https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20Injection
 ![](https://github.com/xenotim/CTF/blob/main/Late/screenshots/ssti%20payload%20rce.png)
 
-//Result
+## Result
 ![](ssti id.png)
 # getting shell
 

