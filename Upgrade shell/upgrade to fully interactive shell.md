@@ -30,13 +30,4 @@ stty -a
 
 
 
-
-
-
-
-
-
-![](test.png)
-
-
 xxxxxxxxxxxx

