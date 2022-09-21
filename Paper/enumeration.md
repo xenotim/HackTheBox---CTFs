@@ -29,7 +29,6 @@ gobuster dir -u http://10.10.11.143 -w /usr/share/wordlists/dirb/common.txt -o g
 ![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Paper/screenshots/gobuster%20main.png)
 
 # domain
-
 ## just a default apache site
 ![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Paper/screenshots/Paper%20domain.png)
 
@@ -56,10 +55,8 @@ gobuster dir -u http://10.10.11.143 -w /usr/share/wordlists/dirb/common.txt -o g
 ## login: chat.office.paper
 ![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Paper/screenshots/rocket.chat%20login.png)
 
-## register on rocket.chat
-## http://chat.office.paper/register/8qozr226AhkCHZdyY
-## dashboard
-## rocket chat
+## register on rocket.chat http://chat.office.paper/register/8qozr226AhkCHZdyY
+## dashboardrocket chat
 ![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Paper/screenshots/rocket%20chat.png)
 
 ## chat snippet: bot called: recyclops
@@ -72,14 +69,14 @@ gobuster dir -u http://10.10.11.143 -w /usr/share/wordlists/dirb/common.txt -o g
 ![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Paper/screenshots/recyclops%20bot%20command.png)
 
 
-rocket chat path traversal
+## rocket chat path traversal
 ![](rocket chat path traversal 1.png)
 
 ## application called hubot is running
 ## .env file may containing sensitive data
 ![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Paper/screenshots/rocketchat%20config%20git.png)
 
-//hubot directory
+## hubot directory
 ![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Paper/screenshots/hubot%20directory.png)
 
 ## hubot .env file

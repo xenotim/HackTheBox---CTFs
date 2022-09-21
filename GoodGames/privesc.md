@@ -6,7 +6,7 @@
 --> SSH: ./bash -p --> root
 Changes in docker environment are immediately refleced in SSH /home/augustus!
 Since we are root in docker chmod is possible --> SUID 4777 file!
-![](suid bash 4777.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/GoodGames/screenshots/suid%20bash%204777.png)
 
 ## ssh into augustus
 ![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/GoodGames/screenshots/ssh%20into%20augustus.png)

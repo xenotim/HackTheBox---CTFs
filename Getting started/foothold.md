@@ -17,7 +17,7 @@
 ## shell
 ![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Getting%20started/screenshots/nc%20-%20shell.png)
 
-//onliner shell.php
+## onliner shell.php
 ![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Getting%20started/screenshots/shell%20php%20-%20onliner.png)
 
 ![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Getting%20started/screenshots/nc%20-%20listening%20for%20root%20shell.png)
