@@ -11,7 +11,7 @@
 
 # login
 ## invalid username
-![](login%20invalid%20username.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/NodeBlog/screenshots/login%20invalid%20username.png)
 
 ## valid username: admin
 ![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/NodeBlog/screenshots/login%20invalid%20username.png)
