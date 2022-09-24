@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Getting started/enumeration.md",
+            "file": "GoodGames/enumeration.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Getting started/enumeration.md",
+                "file": "GoodGames/enumeration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Getting started/enumeration.md",
+                "file": "GoodGames/enumeration.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Getting started/enumeration.md"
+                "file": "GoodGames/enumeration.md"
               }
             }
           }
@@ -130,8 +130,9 @@
   },
   "active": "3603722305bfd804",
   "lastOpenFiles": [
-    "Getting started/foothold.md",
+    "SteamCloud/enumeration.md",
     "Getting started/enumeration.md",
+    "Getting started/foothold.md",
     "GoodGames/enumeration.md"
   ]
 }
