@@ -136,7 +136,7 @@ wfuzz -z range,0000-9999 -w iptable -u "http://10.10.11.159/api/resettoken" -H "
 
 
 
-![]https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/burpsuite%20extract%20uhc%20database%20and%20prittify.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Altered/screenshots/burpsuite%20extract%20uhc%20database%20and%20prittify.png)
 
 
 ### extract users:name + users:password
