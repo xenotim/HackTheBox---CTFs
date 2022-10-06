@@ -32,7 +32,7 @@
 - The ticket granting server confirms that a user is making an access request to a known service and issues service tickets
 
 ## kerberos realm
-![](kerberos%20realm.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Kerberos/screenshots/kerberos%20realm.png)
 
 - Tons of messages are sent back and forth between users and authentication server
 
@@ -48,7 +48,7 @@ Tickets contain most of the information that needs to be passed containing the c
 
 All this is encrypted using a servers secret key
 
-![](kerberos%20authentication%20overview.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Kerberos/screenshots/kerberos%20authentication%20overview.png)
 
 
 
