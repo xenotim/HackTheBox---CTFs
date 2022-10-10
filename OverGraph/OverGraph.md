@@ -1,5 +1,6 @@
 ![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/OverGraph/screenshots/over%20graph%20logo.png)
 
+![](OverGraph.png)
 
 ## nmap all ports
 ![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/OverGraph/screenshots/nmap%20all%20ports.png)
